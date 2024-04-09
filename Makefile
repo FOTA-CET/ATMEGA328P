@@ -34,7 +34,7 @@ CC = avr-gcc
 
 CFLAGS = -Wall -Os -mmcu=atmega328p -std=gnu99
 
-LDFLAGS = -Wl,-section-start=.text=0x7C00
+LDFLAGS = -Wl,-section-start=.text=7C00
 
 # Define MK_DIR based on the operating system or environment in which the Makefile is being executed
 ifdef SystemRoot
