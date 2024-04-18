@@ -86,12 +86,12 @@ clean: CMakeFiles/flash.dir/clean
 CMakeFiles/ATMEGA328P.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ATMEGA328P.dir\build.make CMakeFiles/ATMEGA328P.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ATMEGA328P.dir\build.make CMakeFiles/ATMEGA328P.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\Repository\ATMEGA328P\build\CMakeFiles --progress-num=1,2,3,4,5 "Built target ATMEGA328P"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\Repository\ATMEGA328P\build\CMakeFiles --progress-num=1,2,3,4,5,6 "Built target ATMEGA328P"
 .PHONY : CMakeFiles/ATMEGA328P.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ATMEGA328P.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Repository\ATMEGA328P\build\CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Repository\ATMEGA328P\build\CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/ATMEGA328P.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Repository\ATMEGA328P\build\CMakeFiles 0
 .PHONY : CMakeFiles/ATMEGA328P.dir/rule
@@ -117,7 +117,7 @@ CMakeFiles/strip.dir/all: CMakeFiles/ATMEGA328P.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/strip.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Repository\ATMEGA328P\build\CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Repository\ATMEGA328P\build\CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/strip.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Repository\ATMEGA328P\build\CMakeFiles 0
 .PHONY : CMakeFiles/strip.dir/rule
@@ -143,7 +143,7 @@ CMakeFiles/hex.dir/all: CMakeFiles/strip.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/hex.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Repository\ATMEGA328P\build\CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Repository\ATMEGA328P\build\CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/hex.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Repository\ATMEGA328P\build\CMakeFiles 0
 .PHONY : CMakeFiles/hex.dir/rule
@@ -169,7 +169,7 @@ CMakeFiles/eeprom.dir/all: CMakeFiles/strip.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/eeprom.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Repository\ATMEGA328P\build\CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Repository\ATMEGA328P\build\CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/eeprom.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Repository\ATMEGA328P\build\CMakeFiles 0
 .PHONY : CMakeFiles/eeprom.dir/rule
@@ -195,7 +195,7 @@ CMakeFiles/flash.dir/all: CMakeFiles/hex.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/flash.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Repository\ATMEGA328P\build\CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Repository\ATMEGA328P\build\CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/flash.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Repository\ATMEGA328P\build\CMakeFiles 0
 .PHONY : CMakeFiles/flash.dir/rule

@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "ATMEGA328P.lst"
   "CMakeFiles/ATMEGA328P.dir/lib/can/can.c.obj"
   "CMakeFiles/ATMEGA328P.dir/lib/can/can.c.obj.d"
+  "CMakeFiles/ATMEGA328P.dir/lib/flash/flash.c.obj"
+  "CMakeFiles/ATMEGA328P.dir/lib/flash/flash.c.obj.d"
   "CMakeFiles/ATMEGA328P.dir/lib/uart/uart.c.obj"
   "CMakeFiles/ATMEGA328P.dir/lib/uart/uart.c.obj.d"
   "CMakeFiles/ATMEGA328P.dir/lib/usci/usci.c.obj"

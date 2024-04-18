@@ -4,7 +4,7 @@
 # compile C with D:/Toolchain/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/avr-gcc.exe
 C_DEFINES = -DF_CPU=16000000
 
-C_INCLUDES = -ID:\Repository\ATMEGA328P\include -ID:\Repository\ATMEGA328P\lib\can -ID:\Repository\ATMEGA328P\lib\uart -ID:\Repository\ATMEGA328P\lib\usci
+C_INCLUDES = -ID:\Repository\ATMEGA328P\include -ID:\Repository\ATMEGA328P\lib\can -ID:\Repository\ATMEGA328P\lib\flash -ID:\Repository\ATMEGA328P\lib\uart -ID:\Repository\ATMEGA328P\lib\usci
 
 C_FLAGS = -mmcu=atmega328p -gstabs -g -ggdb -DF_CPU=16000000 -DBAUD=9600 -Os -lm -lprintf_flt -Wall -Wstrict-prototypes -Wl,--gc-sections -Wl,--relax -std=gnu99 -funsigned-char -funsigned-bitfields -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -Wl,-section-start=.text=7000
 

@@ -96,10 +96,24 @@ CMakeFiles/ATMEGA328P.dir/lib/can/can.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ATMEGA328P.dir/lib/can/can.c.s"
 	D:\Toolchain\avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64\avr8-gnu-toolchain-win32_x86_64\bin\avr-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Repository\ATMEGA328P\lib\can\can.c -o CMakeFiles\ATMEGA328P.dir\lib\can\can.c.s
 
+CMakeFiles/ATMEGA328P.dir/lib/flash/flash.c.obj: CMakeFiles/ATMEGA328P.dir/flags.make
+CMakeFiles/ATMEGA328P.dir/lib/flash/flash.c.obj: D:/Repository/ATMEGA328P/lib/flash/flash.c
+CMakeFiles/ATMEGA328P.dir/lib/flash/flash.c.obj: CMakeFiles/ATMEGA328P.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Repository\ATMEGA328P\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/ATMEGA328P.dir/lib/flash/flash.c.obj"
+	D:\Toolchain\avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64\avr8-gnu-toolchain-win32_x86_64\bin\avr-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ATMEGA328P.dir/lib/flash/flash.c.obj -MF CMakeFiles\ATMEGA328P.dir\lib\flash\flash.c.obj.d -o CMakeFiles\ATMEGA328P.dir\lib\flash\flash.c.obj -c D:\Repository\ATMEGA328P\lib\flash\flash.c
+
+CMakeFiles/ATMEGA328P.dir/lib/flash/flash.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ATMEGA328P.dir/lib/flash/flash.c.i"
+	D:\Toolchain\avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64\avr8-gnu-toolchain-win32_x86_64\bin\avr-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Repository\ATMEGA328P\lib\flash\flash.c > CMakeFiles\ATMEGA328P.dir\lib\flash\flash.c.i
+
+CMakeFiles/ATMEGA328P.dir/lib/flash/flash.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ATMEGA328P.dir/lib/flash/flash.c.s"
+	D:\Toolchain\avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64\avr8-gnu-toolchain-win32_x86_64\bin\avr-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Repository\ATMEGA328P\lib\flash\flash.c -o CMakeFiles\ATMEGA328P.dir\lib\flash\flash.c.s
+
 CMakeFiles/ATMEGA328P.dir/lib/uart/uart.c.obj: CMakeFiles/ATMEGA328P.dir/flags.make
 CMakeFiles/ATMEGA328P.dir/lib/uart/uart.c.obj: D:/Repository/ATMEGA328P/lib/uart/uart.c
 CMakeFiles/ATMEGA328P.dir/lib/uart/uart.c.obj: CMakeFiles/ATMEGA328P.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Repository\ATMEGA328P\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/ATMEGA328P.dir/lib/uart/uart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Repository\ATMEGA328P\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/ATMEGA328P.dir/lib/uart/uart.c.obj"
 	D:\Toolchain\avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64\avr8-gnu-toolchain-win32_x86_64\bin\avr-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ATMEGA328P.dir/lib/uart/uart.c.obj -MF CMakeFiles\ATMEGA328P.dir\lib\uart\uart.c.obj.d -o CMakeFiles\ATMEGA328P.dir\lib\uart\uart.c.obj -c D:\Repository\ATMEGA328P\lib\uart\uart.c
 
 CMakeFiles/ATMEGA328P.dir/lib/uart/uart.c.i: cmake_force
@@ -113,7 +127,7 @@ CMakeFiles/ATMEGA328P.dir/lib/uart/uart.c.s: cmake_force
 CMakeFiles/ATMEGA328P.dir/lib/usci/usci.c.obj: CMakeFiles/ATMEGA328P.dir/flags.make
 CMakeFiles/ATMEGA328P.dir/lib/usci/usci.c.obj: D:/Repository/ATMEGA328P/lib/usci/usci.c
 CMakeFiles/ATMEGA328P.dir/lib/usci/usci.c.obj: CMakeFiles/ATMEGA328P.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Repository\ATMEGA328P\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/ATMEGA328P.dir/lib/usci/usci.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Repository\ATMEGA328P\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/ATMEGA328P.dir/lib/usci/usci.c.obj"
 	D:\Toolchain\avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64\avr8-gnu-toolchain-win32_x86_64\bin\avr-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ATMEGA328P.dir/lib/usci/usci.c.obj -MF CMakeFiles\ATMEGA328P.dir\lib\usci\usci.c.obj.d -o CMakeFiles\ATMEGA328P.dir\lib\usci\usci.c.obj -c D:\Repository\ATMEGA328P\lib\usci\usci.c
 
 CMakeFiles/ATMEGA328P.dir/lib/usci/usci.c.i: cmake_force
@@ -128,6 +142,7 @@ CMakeFiles/ATMEGA328P.dir/lib/usci/usci.c.s: cmake_force
 ATMEGA328P_OBJECTS = \
 "CMakeFiles/ATMEGA328P.dir/src/main.c.obj" \
 "CMakeFiles/ATMEGA328P.dir/lib/can/can.c.obj" \
+"CMakeFiles/ATMEGA328P.dir/lib/flash/flash.c.obj" \
 "CMakeFiles/ATMEGA328P.dir/lib/uart/uart.c.obj" \
 "CMakeFiles/ATMEGA328P.dir/lib/usci/usci.c.obj"
 
@@ -136,11 +151,12 @@ ATMEGA328P_EXTERNAL_OBJECTS =
 
 ATMEGA328P.elf: CMakeFiles/ATMEGA328P.dir/src/main.c.obj
 ATMEGA328P.elf: CMakeFiles/ATMEGA328P.dir/lib/can/can.c.obj
+ATMEGA328P.elf: CMakeFiles/ATMEGA328P.dir/lib/flash/flash.c.obj
 ATMEGA328P.elf: CMakeFiles/ATMEGA328P.dir/lib/uart/uart.c.obj
 ATMEGA328P.elf: CMakeFiles/ATMEGA328P.dir/lib/usci/usci.c.obj
 ATMEGA328P.elf: CMakeFiles/ATMEGA328P.dir/build.make
 ATMEGA328P.elf: CMakeFiles/ATMEGA328P.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\Repository\ATMEGA328P\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable ATMEGA328P.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\Repository\ATMEGA328P\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable ATMEGA328P.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\ATMEGA328P.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -204,6 +204,30 @@ lib/can/can.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ATMEGA328P.dir\build.make CMakeFiles/ATMEGA328P.dir/lib/can/can.c.s
 .PHONY : lib/can/can.c.s
 
+lib/flash/flash.obj: lib/flash/flash.c.obj
+.PHONY : lib/flash/flash.obj
+
+# target to build an object file
+lib/flash/flash.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ATMEGA328P.dir\build.make CMakeFiles/ATMEGA328P.dir/lib/flash/flash.c.obj
+.PHONY : lib/flash/flash.c.obj
+
+lib/flash/flash.i: lib/flash/flash.c.i
+.PHONY : lib/flash/flash.i
+
+# target to preprocess a source file
+lib/flash/flash.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ATMEGA328P.dir\build.make CMakeFiles/ATMEGA328P.dir/lib/flash/flash.c.i
+.PHONY : lib/flash/flash.c.i
+
+lib/flash/flash.s: lib/flash/flash.c.s
+.PHONY : lib/flash/flash.s
+
+# target to generate assembly for a file
+lib/flash/flash.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ATMEGA328P.dir\build.make CMakeFiles/ATMEGA328P.dir/lib/flash/flash.c.s
+.PHONY : lib/flash/flash.c.s
+
 lib/uart/uart.obj: lib/uart/uart.c.obj
 .PHONY : lib/uart/uart.obj
 
@@ -292,6 +316,9 @@ help:
 	@echo ... lib/can/can.obj
 	@echo ... lib/can/can.i
 	@echo ... lib/can/can.s
+	@echo ... lib/flash/flash.obj
+	@echo ... lib/flash/flash.i
+	@echo ... lib/flash/flash.s
 	@echo ... lib/uart/uart.obj
 	@echo ... lib/uart/uart.i
 	@echo ... lib/uart/uart.s
