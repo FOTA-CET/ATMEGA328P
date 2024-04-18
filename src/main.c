@@ -72,6 +72,11 @@ int main()
 						flash_page_buff[count + i] = can.data.data_u8[i];
 					}
 					write_program_pages(ADDRESS,flash_page_buff,sizeof(flash_page_buff));
+
+					_SFR_IO8(0x2C) = 0;
+					_SFR_IO8(0x2D) = 0;
+					DDRB = 0;
+
 					asm volatile ("jmp 0");  
 				}
 				else

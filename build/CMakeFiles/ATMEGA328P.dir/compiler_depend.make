@@ -102,7 +102,6 @@ CMakeFiles/ATMEGA328P.dir/src/main.c.obj: D:/Repository/ATMEGA328P/src/main.c \
   D:/Toolchain/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/avr/include/avr/portpins.h \
   D:/Toolchain/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/avr/include/avr/sfr_defs.h \
   D:/Toolchain/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/avr/include/avr/version.h \
-  D:/Toolchain/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/avr/include/avr/wdt.h \
   D:/Toolchain/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/avr/include/inttypes.h \
   D:/Toolchain/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/avr/include/math.h \
   D:/Toolchain/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/avr/include/stdint.h \
@@ -178,5 +177,3 @@ D:/Toolchain/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-w
 D:/Repository/ATMEGA328P/lib/uart/uart.h:
 
 D:/Repository/ATMEGA328P/src/main.c:
-
-D:/Toolchain/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/avr/include/avr/wdt.h:

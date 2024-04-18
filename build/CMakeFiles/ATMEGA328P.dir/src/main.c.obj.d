@@ -26,5 +26,4 @@ CMakeFiles/ATMEGA328P.dir/src/main.c.obj: \
  d:\toolchain\avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64\avr8-gnu-toolchain-win32_x86_64\avr\include\avr\boot.h \
  d:\toolchain\avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64\avr8-gnu-toolchain-win32_x86_64\avr\include\avr\eeprom.h \
  d:\toolchain\avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64\avr8-gnu-toolchain-win32_x86_64\lib\gcc\avr\7.3.0\include-fixed\limits.h \
- d:\toolchain\avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64\avr8-gnu-toolchain-win32_x86_64\avr\include\avr\interrupt.h \
- d:\toolchain\avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64\avr8-gnu-toolchain-win32_x86_64\avr\include\avr\wdt.h
+ d:\toolchain\avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64\avr8-gnu-toolchain-win32_x86_64\avr\include\avr\interrupt.h
