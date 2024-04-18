@@ -69,8 +69,9 @@ set(CTUNING   "-funsigned-char -funsigned-bitfields -fpack-struct -fshort-enums 
 set(COPT      "-Os -lm -lprintf_flt")
 set(CMCU      "-mmcu=${MCU}")
 set(CDEFS     "-DF_CPU=${F_CPU} -DBAUD=${BAUD}")
+set(LDFLAGS   "-Wl,-section-start=.text=7000")
 
-set(CFLAGS   "${CMCU} ${CDEBUG} ${CDEFS} ${COPT} ${CWARN} ${CSTANDARD} ${CTUNING}")
+set(CFLAGS   "${CMCU} ${CDEBUG} ${CDEFS} ${COPT} ${CWARN} ${CSTANDARD} ${CTUNING} ${LDFLAGS}")
 set(CXXFLAGS "${CMCU} ${CDEBUG} ${CDEFS} ${COPT} ${CTUNING}")
 
 set(CMAKE_C_FLAGS   "${CFLAGS}")
