@@ -23,7 +23,7 @@ int main ()
 
 	// Init CAN 
 	spi_masterInit();
-	can_init(CAN_BITRATE_500); // 500KBPS
+	can_init(CAN_BITRATE_1000); // 500KBPS
 
 	uint8_t boolian = 1; // Only transmit data
 	if(boolian)
