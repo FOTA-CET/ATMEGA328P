@@ -1,7 +1,7 @@
 /*
  * main.h
  *
- *  Created on: 23 баечЧ 2016
+ *  Created on: 23 пїЅпїЅпїЅпїЅпїЅ 2016
  *      Author: etty
  */
 
@@ -11,7 +11,7 @@
 #include "usci.h"
 #include <avr/io.h>
 #include "stdio.h"
-#include <avr/delay.h>
+#include <util/delay.h>
 
 
 //set can address
