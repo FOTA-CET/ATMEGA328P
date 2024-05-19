@@ -3,6 +3,8 @@
         "flash.h": "c",
         "uart.h": "c",
         "stdint.h": "c",
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "usci.h": "c",
+        "corecrt_wstdio.h": "c"
     }
 }
