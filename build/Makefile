@@ -228,30 +228,6 @@ lib/flash/flash.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ATMEGA328P.dir\build.make CMakeFiles/ATMEGA328P.dir/lib/flash/flash.c.s
 .PHONY : lib/flash/flash.c.s
 
-lib/uart/uart.obj: lib/uart/uart.c.obj
-.PHONY : lib/uart/uart.obj
-
-# target to build an object file
-lib/uart/uart.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ATMEGA328P.dir\build.make CMakeFiles/ATMEGA328P.dir/lib/uart/uart.c.obj
-.PHONY : lib/uart/uart.c.obj
-
-lib/uart/uart.i: lib/uart/uart.c.i
-.PHONY : lib/uart/uart.i
-
-# target to preprocess a source file
-lib/uart/uart.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ATMEGA328P.dir\build.make CMakeFiles/ATMEGA328P.dir/lib/uart/uart.c.i
-.PHONY : lib/uart/uart.c.i
-
-lib/uart/uart.s: lib/uart/uart.c.s
-.PHONY : lib/uart/uart.s
-
-# target to generate assembly for a file
-lib/uart/uart.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ATMEGA328P.dir\build.make CMakeFiles/ATMEGA328P.dir/lib/uart/uart.c.s
-.PHONY : lib/uart/uart.c.s
-
 lib/usci/usci.obj: lib/usci/usci.c.obj
 .PHONY : lib/usci/usci.obj
 
@@ -319,9 +295,6 @@ help:
 	@echo ... lib/flash/flash.obj
 	@echo ... lib/flash/flash.i
 	@echo ... lib/flash/flash.s
-	@echo ... lib/uart/uart.obj
-	@echo ... lib/uart/uart.i
-	@echo ... lib/uart/uart.s
 	@echo ... lib/usci/usci.obj
 	@echo ... lib/usci/usci.i
 	@echo ... lib/usci/usci.s

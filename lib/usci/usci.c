@@ -1,7 +1,7 @@
 /*
  * usci.c
  *
- *  Created on: 19 баечЧ 2016
+ *  Created on: 19 пїЅпїЅпїЅпїЅпїЅ 2016
  *      Author: etty
  */
 
@@ -41,12 +41,12 @@ void spi_masterInit(void)
 
 	//SPCR = ((1<<CPOL)|(1<<CPHA)|(1<<SPE)|(1<<MSTR)|(1<<SPR0));
 	SPCR |= ((1<<SPE)|(1<<MSTR)|(1<<SPR0)|(1<<SPR1));
-	printf("SPCR = %d", SPCR);
+	// printf("SPCR = %d", SPCR);
 	char temp = SPCR;
-	ptinrHEXLE(temp);
-	printf("\n SPCS = ");
+	// ptinrHEXLE(temp);
+	// printf("\n SPCS = ");
 	temp = SPSR;
-	ptinrHEXLE(temp);
+	// ptinrHEXLE(temp);
 
 
 	PORTB |= (1<<PB2); // maybe SS#

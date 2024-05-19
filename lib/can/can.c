@@ -80,7 +80,7 @@ void can_init( unsigned int bitrate_index )
 	can_mod( CANCTRL, 0x03, 0x00 );			// CANCTRL register, modify lower 2 bits, CLK = /1 = 16 MHz
 	
 	can_read(CANCTRL,buffer,1);
-	printf("CANCTRL = %d \n",buffer[0]);
+	// printf("CANCTRL = %d \n",buffer[0]);
 
 	// Set up bit timing
 	switch(bitrate_index)
@@ -184,14 +184,14 @@ void can_init( unsigned int bitrate_index )
 	buffer[0] |= (0x03 << RXM);
 	can_write( RXB0CTRL, buffer, 1 );
 	can_read( RXB0CTRL, buffer, 1 );
-	printf("RXB0CTRL = %d \n",buffer[0]);
+	// printf("RXB0CTRL = %d \n",buffer[0]);
 
 	can_read( RXB1CTRL, buffer, 1 );
 	buffer[0] |= (0x03 << RXM);
 	can_write( RXB1CTRL, buffer, 1 );
 	can_read( RXB1CTRL, buffer, 1 );
 
-	printf("RXB1CTRL = %d \n",buffer[0]);
+	// printf("RXB1CTRL = %d \n",buffer[0]);
 
 
 	// Switch out of config mode into normal operating mode
@@ -409,19 +409,19 @@ void can_push( void )
 /*
  * Abort all pending transmissions
  */
-void can_abort_transmit( void )
+/* void can_abort_transmit( void )
 {
 	// Abort transmission of all messages
 	can_mod( TXB0CTRL, 0x08, 0x00 );
 	can_mod( TXB1CTRL, 0x08, 0x00 );
 	can_mod( TXB2CTRL, 0x08, 0x00 );
-}
+} */
 
 /*
  * Put CAN controller in sleep mode
  * - Busy wait until part is actually asleep
  */
-void can_sleep( void )
+/* void can_sleep( void )
 {
 	unsigned char status;
 	
@@ -434,17 +434,17 @@ void can_sleep( void )
 		// Read out the status register
 		can_read( CANSTAT, &status, 1 );
 	}
-}
+} */
 
 /*
  * Wake CAN controller from sleep
  * - Busy wait until in normal operation mode
  */
-void can_wake( void )
+/* void can_wake( void )
 {
 	// Put part in normal mode
 	can_mod( CANCTRL, 0xE0, 0x00 );			// CANCTRL register, modify upper 3 bits, mode = Normal
-}
+} */
 
 
 

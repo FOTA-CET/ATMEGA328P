@@ -19,5 +19,4 @@ CMakeFiles/ATMEGA328P.dir/lib/can/can.c.obj: \
  d:\toolchain\avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64\avr8-gnu-toolchain-win32_x86_64\avr\include\avr\lock.h \
  d:\toolchain\avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64\avr8-gnu-toolchain-win32_x86_64\avr\include\stdio.h \
  d:\toolchain\avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64\avr8-gnu-toolchain-win32_x86_64\lib\gcc\avr\7.3.0\include\stdarg.h \
- d:\toolchain\avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64\avr8-gnu-toolchain-win32_x86_64\lib\gcc\avr\7.3.0\include\stddef.h \
- d:\toolchain\avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64\avr8-gnu-toolchain-win32_x86_64\avr\include\avr\delay.h
+ d:\toolchain\avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64\avr8-gnu-toolchain-win32_x86_64\lib\gcc\avr\7.3.0\include\stddef.h

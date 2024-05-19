@@ -10,7 +10,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/Repository/ATMEGA328P/lib/can/can.c" "CMakeFiles/ATMEGA328P.dir/lib/can/can.c.obj" "gcc" "CMakeFiles/ATMEGA328P.dir/lib/can/can.c.obj.d"
   "D:/Repository/ATMEGA328P/lib/flash/flash.c" "CMakeFiles/ATMEGA328P.dir/lib/flash/flash.c.obj" "gcc" "CMakeFiles/ATMEGA328P.dir/lib/flash/flash.c.obj.d"
-  "D:/Repository/ATMEGA328P/lib/uart/uart.c" "CMakeFiles/ATMEGA328P.dir/lib/uart/uart.c.obj" "gcc" "CMakeFiles/ATMEGA328P.dir/lib/uart/uart.c.obj.d"
   "D:/Repository/ATMEGA328P/lib/usci/usci.c" "CMakeFiles/ATMEGA328P.dir/lib/usci/usci.c.obj" "gcc" "CMakeFiles/ATMEGA328P.dir/lib/usci/usci.c.obj.d"
   "D:/Repository/ATMEGA328P/src/main.c" "CMakeFiles/ATMEGA328P.dir/src/main.c.obj" "gcc" "CMakeFiles/ATMEGA328P.dir/src/main.c.obj.d"
   )
