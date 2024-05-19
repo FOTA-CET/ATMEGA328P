@@ -32,9 +32,9 @@ void can_init( unsigned int bitrate_index );
 char can_transmit( void );
 void can_receive( void );
 void can_push( void );
-void can_abort_transmit( void );
-void can_sleep( void );
-void can_wake( void );
+// void can_abort_transmit( void );
+// void can_sleep( void );
+// void can_wake( void );
 void can_read( unsigned char address, unsigned char *ptr, unsigned char bytes );
 
 // Public variables
