@@ -88,7 +88,7 @@ int main(int argc, char** argv)
 		{
 			uint32_t ADDRESS = ((uint32_t)0x00000 + (addr_data_offset * 128));
 
-			if (can.address == 0x01)
+			if (can.address == 0x03)
 			{
 				uint32_t ts = 1;
 				can_read(RXB0DLC, DLC, 1); // Get data length of CAN MESSAGE
@@ -100,7 +100,7 @@ int main(int argc, char** argv)
 				flag = 1;
 			}
 
-			if (can.address == 0x02 && flag == 1)
+			if (can.address == 0x04 && flag == 1)
 			{
 				if (count == 128)
 				{
