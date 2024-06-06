@@ -4,7 +4,7 @@
 #include <avr/io.h>
 #include <avr/boot.h>
 #include <avr/interrupt.h>
-
+#include <avr/pgmspace.h>
 void write_program_pages(uint32_t first_page_address, uint8_t *program_buffer, uint16_t size);
 
 #endif
