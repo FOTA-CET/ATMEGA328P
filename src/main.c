@@ -4,7 +4,7 @@
 
 #include "main.h"
 #include "can.h"
-// #include "uart.h"
+#include "timer.h"
 #include "flash.h"
 #include <string.h>
 #include <avr/boot.h>
@@ -32,26 +32,19 @@ uint8_t timeoutFlag = 0;
 #define OTA_ADDRESS (uint32_t)0x3800
 #define CURRENT_ADDRESS (uint32_t)0x0000
 #define NUM_PAGES_TO_COPY 112
-#define FLASH_PAGE_SIZE 128 
+#define FLASH_PAGE_SIZE 128
 
 int8_t processPercentCAN(uint16_t firmwareSize, uint16_t count);
 int8_t CAN_receive(uint8_t buffer[]);
 void CAN_send(uint32_t id, uint8_t size, uint8_t data[]);
 void updateCurrent(uint32_t src_addr, uint32_t dest_addr);
-void timerInit(uint16_t timeout_ms);
 void gotoApp(void);
+// void erase_flash_section(uint32_t start_addr, uint32_t end_addr);
 
 ISR(TIMER1_COMPA_vect)
 {
-	if (!timeoutFlag)
-	{
-		gotoApp();
-	}
-	else
-	{
-		timeoutFlag = 0;
-	}
 }
+
 int main(int argc, char **argv)
 {
 	/* setup our stdio stream */
@@ -65,18 +58,22 @@ int main(int argc, char **argv)
 	spi_masterInit();
 	can_init(CAN_BITRATE_1000); // 500KBPS
 
-	timerInit(5000);
-	sei();
+	timerInit1s();
 
 	while (1)
 	{
+		if (TCNT1 >= OCR1A)
+		{
+			timerDisable();
+			gotoApp();
+		}
 		if (CAN_receive(buffer) == 1)
 		{
+			timerReset();
 			uint32_t ADDRESS = ((uint32_t)OTA_ADDRESS + (addr_data_offset * 128));
 
 			if (can.address == 0x03)
 			{
-				timeoutFlag = 1;
 				uint32_t ts = 1;
 				can_read(RXB0DLC, DLC, 1); // Get data length of CAN MESSAGE
 				for (int8_t i = DLC[0] - 1; i >= 0; i--)
@@ -89,7 +86,6 @@ int main(int argc, char **argv)
 
 			if (can.address == 0x04 && flag == 1)
 			{
-				timeoutFlag = 1;
 				if (count == 128)
 				{
 					write_program_pages(ADDRESS, flash_page_buff, sizeof(flash_page_buff));
@@ -110,6 +106,8 @@ int main(int argc, char **argv)
 					percentBuf[0] = 100;
 					CAN_send(PERCENT_ADDR, 1, percentBuf);
 
+					timerDisable();
+					
 					updateCurrent(OTA_ADDRESS, CURRENT_ADDRESS);
 					gotoApp();
 				}
@@ -140,19 +138,11 @@ int main(int argc, char **argv)
 	return 0;
 }
 
-void timerInit(uint16_t timeout_ms)
-{
-	TCCR1B |= (1 << WGM12) | (1 << CS12) | (1 << CS10);
-	OCR1A = (F_CPU / 1000 / 1024) * timeout_ms - 1;
-	TIMSK1 |= (1 << OCIE1A);
-}
-
 void gotoApp()
 {
 	_SFR_IO8(0x2C) = 0;
 	_SFR_IO8(0x2D) = 0;
 	DDRB = 0;
-
 	asm volatile("jmp 0");
 }
 
@@ -206,6 +196,24 @@ int8_t CAN_receive(uint8_t buffer[])
 int8_t processPercentCAN(uint16_t firmwareSize, uint16_t count)
 {
 	uint8_t percent = (uint8_t)(((uint32_t)count * 100 + firmwareSize / 2) / firmwareSize);
-	if(percent < 100) return percent;
+	if (percent < 100)
+		return percent;
 	return -1;
+}
+
+void erase_flash_section(uint32_t start_addr, uint32_t end_addr)
+{
+	uint32_t addr;
+
+	// Disable interrupts
+	cli();
+
+	for (addr = start_addr; addr < end_addr; addr += FLASH_PAGE_SIZE)
+	{
+		boot_page_erase(addr); // Erase the page at addr
+		boot_spm_busy_wait();  // Wait until the memory is erased
+	}
+
+	// Re-enable interrupts
+	sei();
 }
