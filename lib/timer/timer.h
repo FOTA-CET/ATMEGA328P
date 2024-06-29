@@ -7,5 +7,6 @@
 void timerDisable(void);
 void timerInit(uint16_t timeout_ms);
 void timerInit1s(void);
+void timerInit2s(void);
 void timerReset(void);
 #endif

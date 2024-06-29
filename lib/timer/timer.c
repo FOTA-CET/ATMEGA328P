@@ -38,3 +38,20 @@ void timerInit1s()
 
 	sei(); // Enable global interrupts
 }
+
+void timerInit2s()
+{
+	// Set Timer1 to CTC mode (Clear Timer on Compare Match)
+	TCCR1B |= (1 << WGM12);
+
+	// Set compare value for 2 second interrupt
+	OCR1A = 31249;
+
+	// Enable Timer1 compare interrupt
+	TIMSK1 |= (1 << OCIE1A);
+
+	// Start Timer1 with prescaler 1024
+	TCCR1B |= (1 << CS12) | (1 << CS10);
+
+	sei(); // Enable global interrupts
+}

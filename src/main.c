@@ -58,7 +58,8 @@ int main(int argc, char **argv)
 	spi_masterInit();
 	can_init(CAN_BITRATE_1000); // 500KBPS
 
-	timerInit1s();
+	// timerInit1s();
+	timerInit2s();
 
 	while (1)
 	{
