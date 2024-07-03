@@ -1,10 +1,3 @@
-/*
- * usci.c
- *
- *  Created on: 19 ����� 2016
- *      Author: etty
- */
-
 #include "usci.h"
 #include <avr/delay.h>
 #include <avr/io.h>

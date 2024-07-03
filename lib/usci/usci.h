@@ -1,10 +1,3 @@
-/*
- * usci.h
- *
- *  Created on: 19 срхїз 2016
- *      Author: etty
- */
-
 #ifndef USCI_H_
 #define USCI_H_
 
