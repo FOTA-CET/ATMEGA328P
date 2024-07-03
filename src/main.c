@@ -39,7 +39,6 @@ int8_t CAN_receive(uint8_t buffer[]);
 void CAN_send(uint32_t id, uint8_t size, uint8_t data[]);
 void updateCurrent(uint32_t src_addr, uint32_t dest_addr);
 void gotoApp(void);
-// void erase_flash_section(uint32_t start_addr, uint32_t end_addr);
 
 ISR(TIMER1_COMPA_vect)
 {
@@ -47,10 +46,6 @@ ISR(TIMER1_COMPA_vect)
 
 int main(int argc, char **argv)
 {
-	/* setup our stdio stream */
-	// stdout = &mystdout;
-	// USART_Init(MYUBRR);
-
 	/* Buffer store CAN receive data */
 	uint8_t buffer[8] = {};
 
@@ -200,21 +195,4 @@ int8_t processPercentCAN(uint16_t firmwareSize, uint16_t count)
 	if (percent < 100)
 		return percent;
 	return -1;
-}
-
-void erase_flash_section(uint32_t start_addr, uint32_t end_addr)
-{
-	uint32_t addr;
-
-	// Disable interrupts
-	cli();
-
-	for (addr = start_addr; addr < end_addr; addr += FLASH_PAGE_SIZE)
-	{
-		boot_page_erase(addr); // Erase the page at addr
-		boot_spm_busy_wait();  // Wait until the memory is erased
-	}
-
-	// Re-enable interrupts
-	sei();
 }
